@@ -17,7 +17,9 @@ export default function ProductDetail() {
     setCount(count  +1 )
   }
   const minusClick = () => {
+    if(count > 0) {
     setCount(count - 1);
+    }
   }
   const handleClick  = () => {
     const product = {id, image, title, price, description};
@@ -33,7 +35,7 @@ export default function ProductDetail() {
     </div>
     <form action="" className="buy-market">
       <ul className="product-lists bg-blue-400 text-center">
-        <li><span className="detail-title" >{title}</span></li>
+        <li><h2 className="detail-title" >{title}</h2></li>
         <li><div className="border-solid border-white h-60 overflow-auto bg-white rounded-xl" id = "descript">{description}</div></li>
         <li className="">Price: ${price}</li>
       </ul>
