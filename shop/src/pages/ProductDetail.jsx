@@ -34,7 +34,7 @@ export default function ProductDetail() {
     <form action="" className="buy-market">
       <ul className="product-lists bg-blue-400 text-center">
         <li><span className="detail-title" >{title}</span></li>
-        <li><div className="border-solid border-white h-60 overflow-auto bg-white rounded-xl">{description}</div></li>
+        <li><div className="border-solid border-white h-60 overflow-auto bg-white rounded-xl" id = "descript">{description}</div></li>
         <li className="">Price: ${price}</li>
       </ul>
       <div className="item-cal">

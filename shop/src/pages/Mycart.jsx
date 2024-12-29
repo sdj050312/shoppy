@@ -2,6 +2,8 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import './Mycart.css';
 import { getCart, removeCart } from '../api/firebase';
 import { useAuthContext } from '../context/AuthContext';
+import Footer from '../components/Footer';
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Mycart() {
   const { uid } = useAuthContext();
@@ -27,8 +29,11 @@ export default function Mycart() {
     deleteItem(itemId);
   };
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error occurred!</p>;
+  if (isLoading) return <div className="signure">
+        Loading...
+
+  </div>;
+  if (error) return <div className = "signure">Would you mind <br />logging in?😎</div>;
 
   return (
     <>
@@ -36,9 +41,10 @@ export default function Mycart() {
         {/* 제목 추가 가능 */}
       </div>
       <div className="title">
-        My Cart
+        My Cart <FaShoppingCart/>
       </div>
       <div className="item-lists">
+        <h1>Are you going to buy the product? 😀</h1>
         <table>
           <thead>
             <tr>
@@ -79,6 +85,7 @@ export default function Mycart() {
           </tbody>
         </table>
       </div>
+      <Footer></Footer>
     </>
   );
 }

@@ -44,6 +44,7 @@
 .detail-container form{
     height: 100%;
     width: 100%;
+    
     border-radius: 10px;
     overflow: hidden;  
 }
@@ -97,9 +98,32 @@
     font-size: 1.5rem;
     width: 50%;
     padding: 1%;
+  
     transition: .3s;
     border-radius: 10px;
 }
 .detail-submit button:hover{
     background-color: rgb(53, 53, 219);
+}
+@media (max-width : 768px) {
+  .detail-container{
+    flex-direction: column;
+    height: 1000px;
+    width: 400px;
+  }
+  .detail-product{
+    padding: 0;
+    width: 300px;
+    height: 500px;
+  }
+  .detail-container form{
+    font-size: .8rem;
+    height: 450px;
+  }
+  .detail-title{
+    font-size: 1.5rem;
+  }
+  #descript{
+    font-size: 1rem;
+  }
 }
