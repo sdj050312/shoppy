@@ -2,10 +2,15 @@
     font-size: 2.2rem;
     transition: .5s;
 }
+header {
+    z-index: 100;
+}
 #upload{
     transition: .5s;
 }
-
+#admins li{
+    margin: 10px;
+}
 #header{
     position: fixed;
     top: 0;     
@@ -19,4 +24,21 @@
     width: 100%;
     position: absolute;
    
+}
+#menu-bar{
+    display: none;
+}
+
+
+/* 화면 크기가 768px 이하일 때 보여줌 */
+@media screen and (max-width: 768px) {
+  #header-guide {
+    display: flex;
+  }
+}
+@media (max-width : 768px) {
+  #header-guide{
+    display: none;
+  }
+  
 }

@@ -7,7 +7,7 @@ import NewProduct from './pages/NewProduct.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Mycart from './pages/Mycart.jsx';
-import Home from './pages/Home.jsx';
+
 import './index.css';
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <Home /> },
+      { index: true, element: <Allprodct/> },
       { path: '/products', element: <Allprodct /> },
       { path: '/products/new', element: <NewProduct /> }, // Fixed typo
       { path: '/products/:id', element: <ProductDetail /> },

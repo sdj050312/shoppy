@@ -63,16 +63,28 @@
 }
 .imgs-show{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-image: url(../../public/imgadd.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     margin-left: 10px;
-
     width: 380px;
      height: 450px;
      border-radius: 5px;
+     position: relative;
      overflow: hidden;
-     object-fit: cover;
+     object-fit: cover;   
+}
+.imgs-show h1{
+    left: 50%;
+    top:50%;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.slick-slider{
+    border: solid 1px;
+    height: 500px;
+}
+.slick-list{
+    border: solid 1px;
+    height: 300px;
 }
 .imgs-show img {
     width: 100%;

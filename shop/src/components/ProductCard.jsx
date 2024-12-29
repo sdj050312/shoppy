@@ -19,7 +19,7 @@ const {id, image, title, price, description} = product;
             }} className="rouded  p-2 bg-blue-700 text-white rounded-lg hover:bg-blue-400 hover:text-black transition duration-300">Buy</button></li>
           </ul>
           <ul className="bg-blue-50 h-full">
-            <li>{price}</li>
+            <li>${price}</li>
             <li>{description}</li>
           </ul>
         </div>

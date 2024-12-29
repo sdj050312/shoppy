@@ -1,12 +1,17 @@
-import './Allproduct.css'
+import './Allproduct.css';
 import Products from '../components/Products'
+import Footer from '../components/Footer';
 export default function Allprodct() {
+
   return (
-    <div>
+    <>
       <div className="title-bar">
-        <h1>CoffeBean</h1>
+        
       </div>
+      
         <Products></Products>
-    </div>
+       <Footer></Footer>
+      
+    </>
   )
 }

@@ -86,6 +86,7 @@ export default function NewProduct() {
           </li>
         </ul>
         <div className="imgs-show">
+         
           {file && <img src={URL.createObjectURL(file)} alt="local file" />}
         </div>
       </form>
