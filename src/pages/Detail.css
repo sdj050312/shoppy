@@ -1,0 +1,129 @@
+.detail{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #9494b2;
+    justify-content: center;
+}
+.detail-container{
+    border-radius: 10px;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 500px;
+    display: flex;
+    background-color: rgb(209, 220, 240);
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    padding: 10px;
+}
+.detail-product{
+    width: 420px;
+     margin: 5px;
+     border-radius: 10px;
+     overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+}
+.detail-item{
+  
+    width: 300px;
+    height: 100%;
+
+}
+.count {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.detail-product img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    height: 100%;
+
+}
+.detail-container form{
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 10px;
+    overflow: hidden;  
+}
+.detail-title{
+    
+    color: white;
+}
+.product-lists{
+    display: flex;
+   padding: 2%;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    font-size: 2rem;
+    
+}
+.item-cal{
+    height: 25%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+}
+.cal-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1%;
+}
+.cal-btn button{
+    border-radius: 10px;
+    background: rgb(33, 33, 41);
+   color: white;
+   font-weight: 900;
+    width: 100px;
+    transition: .5s;
+    height: 40px;
+}
+.cal-btn button:hover{
+    background-color: black;
+    color: white;
+}
+.detail-submit{
+    width: 50%;
+    text-align: center;
+}
+.detail-submit button {
+    background-color: rgb(103, 103, 227);
+    color: white;
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 1%;
+  
+    transition: .3s;
+    border-radius: 10px;
+}
+.detail-submit button:hover{
+    background-color: rgb(53, 53, 219);
+}
+@media (max-width : 768px) {
+  .detail-container{
+    flex-direction: column;
+    height: 1000px;
+    width: 400px;
+  }
+  .detail-product{
+    padding: 0;
+    width: 300px;
+    height: 500px;
+  }
+  .detail-container form{
+    font-size: .8rem;
+    height: 450px;
+  }
+  .detail-title{
+    font-size: 1.5rem;
+  }
+  #descript{
+    font-size: 1rem;
+  }
+}
